@@ -1397,7 +1397,7 @@ def main():
     dim = 9 # Input decision space dimensionality (d)
     test_function = TestZDT2 # Benchmark function from Cell 3
     nOuts = 2 # Number of objectives (M)
-    n_tests = 3 # Number of independent paired trials
+    n_tests = 20 # Number of independent paired trials
     q = 3 # Batch size (Q) evaluated per BO epoch (q=1 for sequential, q=3 for batch)
 
     # Portfolio and evaluation budget configuration
@@ -1407,7 +1407,7 @@ def main():
     noise_percent = 0.01 # Observation noise std as a fraction (1%) of mean initial objective value
     hedge_strategy = MO_Hedge # Hedge selection rule from Cell 7
     initial_sample_size = 30 # Number of initial Halton design points |D_0|
-    epoch_total = 5 # Total number of BO epochs after initial_sample_size
+    epoch_total = 25 # Total number of BO epochs after initial_sample_size
 
     # Normalized unit-cube search domain [0, 1]^d and double precision setup
     n_cont = dim
